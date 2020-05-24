@@ -17,27 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplWFP", "ApplWFP\ApplWFP.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ApplWebSite(1)", "ApplWebSite\", "{1029EBAD-E250-40A7-9A01-44687567651B}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_34381"
-		Debug.AspNetCompiler.PhysicalPath = "ApplWebSite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34381\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_34381"
-		Release.AspNetCompiler.PhysicalPath = "ApplWebSite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34381\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "34381"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplWFA", "ApplWFA\ApplWFA.csproj", "{E44DBB3C-173B-48F4-95C4-3051B6D2473E}"
 EndProject
 Global
@@ -74,10 +53,6 @@ Global
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1029EBAD-E250-40A7-9A01-44687567651B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1029EBAD-E250-40A7-9A01-44687567651B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1029EBAD-E250-40A7-9A01-44687567651B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{1029EBAD-E250-40A7-9A01-44687567651B}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{E44DBB3C-173B-48F4-95C4-3051B6D2473E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E44DBB3C-173B-48F4-95C4-3051B6D2473E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E44DBB3C-173B-48F4-95C4-3051B6D2473E}.Release|Any CPU.ActiveCfg = Release|Any CPU
