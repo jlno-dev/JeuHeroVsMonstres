@@ -3,19 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metier", "Metier\Metier.csproj", "{A1EAD894-15A7-4039-8E5F-EE5AFCEC29A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metier", "Metier\Metier.csproj", "{A1EAD894-15A7-4039-8E5F-EE5AFCEC29A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesDonnees", "AccesDonnees\AccesDonnees.csproj", "{FD785804-1999-443F-A12D-63C35203F59B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccesDonnees", "AccesDonnees\AccesDonnees.csproj", "{FD785804-1999-443F-A12D-63C35203F59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceUtilisateur", "InterfaceUtilisateur\InterfaceUtilisateur.csproj", "{1F8D80F5-4574-48C0-A9B9-C163E6F8C0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceUtilisateur", "InterfaceUtilisateur\InterfaceUtilisateur.csproj", "{1F8D80F5-4574-48C0-A9B9-C163E6F8C0FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrairiesCommunes", "LibrairiesCommunes\LibrairiesCommunes.csproj", "{465E856B-F7F7-4778-8FCE-D9328993A110}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrairiesCommunes", "LibrairiesCommunes\LibrairiesCommunes.csproj", "{465E856B-F7F7-4778-8FCE-D9328993A110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplConsole", "ApplConsole\ApplConsole.csproj", "{64E2CCFD-E27B-46C7-9E20-D712437ACD41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplConsole", "ApplConsole\ApplConsole.csproj", "{64E2CCFD-E27B-46C7-9E20-D712437ACD41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplWFP", "ApplWFP\ApplWFP.csproj", "{13DB9C25-B9C0-46E8-9D2B-5A479E606FCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplWFP", "ApplWFP\ApplWFP.csproj", "{13DB9C25-B9C0-46E8-9D2B-5A479E606FCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ApplWebSite", "ApplWebSite\", "{35133143-86E7-4A90-B684-28B7870FB0A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_34311"
+		Debug.AspNetCompiler.PhysicalPath = "ApplWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34311\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_34311"
+		Release.AspNetCompiler.PhysicalPath = "ApplWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34311\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "34311"
+		SlnRelativePath = "ApplWebSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +73,10 @@ Global
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF7D0EE-ABAF-48EB-8BE6-527B9B237FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35133143-86E7-4A90-B684-28B7870FB0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35133143-86E7-4A90-B684-28B7870FB0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35133143-86E7-4A90-B684-28B7870FB0A6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{35133143-86E7-4A90-B684-28B7870FB0A6}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
