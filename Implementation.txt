@@ -1,0 +1,90 @@
+enum TypeEquipement {attaque, defense}
+
+class Equipement
+	TypeEquipement type_equipement
+	strings nom
+	int niveau
+	AugmenterNiveau()
+	
+Class Arme :
+	
+
+class Personnage
+	int niveau
+	int pt_vie
+	Equipement equipements
+	Attaquer()
+	Defendre()
+
+class Hero : Personnage
+	int [] nb_monstre_normaux
+	GagnerNiveau()	
+	override Attaquer(monstre)
+		si this.armes.attaquer() >= monstre.defendre() alors
+		debut
+			si monstre.niveau = normal alors 
+				cpt_monstre_normal++
+			sinon si monstre.niveau = difficile  alors
+				cpt_monstre_difficile++
+			sinon si monstre = boss alors 
+				cpt_monstre_boss++
+			GagnerNiveau(); //event sur attaquer_monstre
+		fin si
+		
+		override Defendre(monstre)
+	
+class MonstreNormal : Personnage
+	override Attaquer()
+	override Defendre()
+
+class MonstreDifficile : MonstreNormal
+	override Attaquer()
+	override Defendre()
+	
+class Boss : MonstreDifficile
+	override Attaquer()
+	override Defendre()
+	
+	
+Class static De 
+
+class Labyrinthe
+	int nb_cote
+	GenererCarte()
+	Parcourir()
+	
+	
+class Jeu
+	plateau labyrinthe(10,15,ListeMonstres())
+	hero = Hero(80,Epee(10),bouclier(10)
+	Lancer()
+
+	
+===============================================================
+Principe du jeu : Hero se deplace dans un labyrinthe composé de murs, bonus et de monstres, ce labyrinthe est généré aléatoirement.
+
+Bases:
+Hero     : 80 pv , 1 arme niveau 10 et 1 bouclier niveau 10
+Monstres : 
+	normal (50 pv, arme de niveau 10)
+	difficile (100 pv, arme de niveau 40)
+	boss (800 pv, arme de niveau 80) 
+Bonus    : de vie, bonus d'objets
+Attaque, défense : sont simulées par un jet de dé
+Pour le hero le niveau peut évoluer en fonction des bonus et des monstres tués.
+
+le niveau des équipements est représenté par le nombre de face d'un dé.
+
+Regles:
+	Hero gagne si hero.jetde >= monstre.jetDe
+	Hero gagne 1 niveau (+10 pv, et +10 équipements)
+		si 10 monstres_normaux tués
+		si 5 monstres_difficle tués	
+		si 2 boss tués
+	Hero defense : si bouclier.parer() % 3 alors
+		PerdrePv()
+	Monstre 
+		normaux gagne si son attaque est strictement supérieure à celle du hero
+		monstre difficile posséde une attaque de plus que le monstre normal, sort de niveau 10
+		Boss posséde les même caractéristiques qu'un monstre difficile et a un bouclier (niveau 15) en plus.
+		
