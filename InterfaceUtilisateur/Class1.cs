@@ -2,7 +2,5 @@
 
 namespace InterfaceUtilisateur
 {
-    public class Class1
-    {
-    }
+
 }
