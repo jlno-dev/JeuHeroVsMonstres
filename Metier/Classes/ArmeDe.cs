@@ -12,6 +12,8 @@ namespace Metier.Classes
             : base(TypeElement.Armes, pNom, pNiveau, pRang)
         {
         }
+
+        #region interface IArmable
         public int Attaquer()
         {
             return LancerAttaque();
@@ -21,7 +23,7 @@ namespace Metier.Classes
         {
             return LancerEsquive();
         }
-
+        #endregion
         // --------------------------------------------------------------------
         protected virtual int LancerAttaque()
         {
