@@ -1,22 +1,25 @@
 ﻿using Essais.Interfaces;
 using Essais.TypesDefinis;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Essais.Classes
 {
-    public class Equipement : Element
-    {
-        protected List<IArmable> Armes;
-        
-        public Equipement()
-            :base(TypeElement.Equipement, "Set Armure")
+    public class Equipement : Element, IEquipable
+    {       
+        public Equipement(string pNom)
+            :base(TypeElement.Equipement, pNom)
         {
-            Armes = new List<IArmable>();
         }
-        public void AjouterArme(IArmable pArme)
+
+        public override string ToString()
         {
-            Armes.Add(pArme);
+            return base.ToString() + "[Equipement]";
+        }
+        public int Niveau { get ; set ; }
+
+        public virtual void AugmenterNiveau(int pAugmentation)
+        {
+            Niveau += pAugmentation;
         }
     }
 }

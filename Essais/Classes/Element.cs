@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Essais.TypesDefinis;
+﻿using Essais.TypesDefinis;
 
-namespace Essais
+namespace Essais.Classes
 {
     
     public class Element
@@ -20,7 +17,10 @@ namespace Essais
         }
 
         // +++++ Methodes publiques
-
+        public override string ToString()
+        {
+            return "[Element]"; //base.ToString();
+        }
         // +++++ Methodes privées
 
         // +++++ Methodes interfaces
