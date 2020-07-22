@@ -24,10 +24,12 @@ namespace Essais.Classes
             return "[Element]"; //base.ToString();
         }
 
+        #region IEquatable
         public virtual bool Equals(Element pElem)
         {
             return (this.Nom == pElem.Nom && this.Type == pElem.Type);
         }
+        #endregion
 
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls
